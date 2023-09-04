@@ -44,7 +44,7 @@ You will need to generate a [Linear API Key](https://linear.app/dune/settings/ap
 
 Then, you will need to clone the [Linear CLI Importer forked repo](https://github.com/belen-pruvost/linear).
 
-If you need to tune the logic (for example, to include more Linear Issue statuses), you can do so on the [HeightCsvImporter](/packages/import/src/importers/heightCsv/HeightCsvImporter.ts) and build it with `yarn build`.
+If you need to tune the logic (for example, to include more Linear Issue statuses), you can do so on the [HeightCsvImporter](/packages/import/src/importers/heightCsv/HeightCsvImporter.ts). Then, you'll need to run `yarn add @linear/sdk` in the packages/import directory. Finally, you can build the project with `yarn build` on the root folder.
 
 The generated .js file will be on the `packages/import/bin` folder. You will need to move the exported CSV file from Height into this directory.
 
